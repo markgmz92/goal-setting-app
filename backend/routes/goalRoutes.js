@@ -9,6 +9,6 @@ const {
 
 router.route('/').get(getGoals).post(setGoal);
 
-router.route('/:id').delete(deleteGoal).post(updateGoal);
+router.route('/:id').delete(deleteGoal).put(updateGoal);
 
 module.exports = router;
