@@ -8,7 +8,7 @@
     "server": "nodemon backend/server.js",
     "client": "yarn --cwd frontend start",
     "dev": "concurrently \"yarn server\" \"yarn client\"",
-    "heroku-postbuild": "NPM_CONFIG_PROUDCTION=false yarn add --cwd frontend && yarn build --cwd frontend"
+    "heroku-postbuild": "NPM_CONFIG_PROUDCTION=false cd frontend && yarn && yarn run build"
   },
   "author": "Mark",
   "license": "MIT",
